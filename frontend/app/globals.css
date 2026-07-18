@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: #f1f3ef;
+}
+
+body {
+  color: #1b2621;
+}
+
+::selection {
+  background-color: #2f4f3e;
+  color: #f1f3ef;
+}
+
+/* visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid #2f4f3e;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
